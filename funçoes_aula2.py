@@ -6,5 +6,5 @@ def formatar_real_replace(valor):
     return texto
 
 
-preco =  float(input("digite um numero"))
+preco =  float(input("digite um numero:"))
 print(formatar_real_replace(preco))
