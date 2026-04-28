@@ -1,1 +1,10 @@
-print ("Ola mundo")
+def formatar_real_replace(valor):
+    texto = f"R$ {valor:..,.2f}"
+    texto = texto.replace(",","X")
+    texto = texto.replace(".",",")
+    texto = texto.replace("X",".")
+    return texto
+
+
+preco =  float(input("digite um numero"))
+print(formatar_real_replace(preco))
